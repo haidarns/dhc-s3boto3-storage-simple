@@ -28,11 +28,6 @@ class S3Boto3StorageSimpleHealthCheck(StorageHealthCheck):
 
     def check_status(self):
         try:
-            # import boto3
-            # s3 = boto3.client('s3')
-            # s3.head_bucket(Bucket=settings.AWS_STORAGE_BUCKET_NAME)
-            # print('testing')
-
             storage = self.get_storage()
             filename = self.get_file_name()
 

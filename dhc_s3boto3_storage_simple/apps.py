@@ -4,7 +4,7 @@ from health_check.plugins import plugin_dir
 
 
 class HealthCheckConfig(AppConfig):
-    name = 'health_check.contrib.s3boto3_storage_simple'
+    name = 'dhc_s3boto3_storage_simple'
 
     def ready(self):
         from .backends import S3Boto3StorageSimpleHealthCheck
